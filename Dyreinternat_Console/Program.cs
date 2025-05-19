@@ -8,7 +8,7 @@ namespace Dyreinternat_Console
     {
         static void Main(string[] args)
         {
-            AnimalService animalService = new AnimalService(new AnimalJsonRepo("nnii"));
+            AnimalService animalService = new AnimalService(new AnimalJsonRepo("nniigg"));
 
         }
     }
