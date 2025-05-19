@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.13.35825.156 d17.13
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dyreinternat_Console", "Dyreinternat_Console\Dyreinternat_Console.csproj", "{650F430E-3FEA-45AB-89F5-75F00A67BD76}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{650F430E-3FEA-45AB-89F5-75F00A67BD76}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{650F430E-3FEA-45AB-89F5-75F00A67BD76}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{650F430E-3FEA-45AB-89F5-75F00A67BD76}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{650F430E-3FEA-45AB-89F5-75F00A67BD76}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F8C764B0-9556-4FF8-83D3-5BE3D4DEE39E}
+	EndGlobalSection
+EndGlobal
