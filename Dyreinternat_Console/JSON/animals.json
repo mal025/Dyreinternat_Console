@@ -1,0 +1,222 @@
+[
+  {
+    "Name": "Bella",
+    "Race": "Labrador Retriever",
+    "Species": "Hund",
+    "ChipNumber": 1001,
+    "Characteristics": "Venlig, elsker b\u00F8rn",
+    "Size": "Stor",
+    "BirthYear": 2018,
+    "MedicalHistory": "Vaccineret, sterileret",
+    "VisitorLog": "Bes\u00F8gt 3 gange"
+  },
+  {
+    "Name": "Milo",
+    "Race": "Norsk Skovkat",
+    "Species": "Kat",
+    "ChipNumber": 1002,
+    "Characteristics": "Lang pels, reserveret",
+    "Size": "Mellem",
+    "BirthYear": 2020,
+    "MedicalHistory": "Kastreret, lidt tandsten",
+    "VisitorLog": "Bes\u00F8gt 2 gange"
+  },
+  {
+    "Name": "Luna",
+    "Race": "Dv\u00E6rgv\u00E6dder",
+    "Species": "Kanin",
+    "ChipNumber": 1003,
+    "Characteristics": "Rolig og k\u00E6len",
+    "Size": "Lille",
+    "BirthYear": 2022,
+    "MedicalHistory": "Ingen helbredsproblemer",
+    "VisitorLog": "Bes\u00F8gt 1 gang"
+  },
+  {
+    "Name": "Buster",
+    "Race": "Fransk Bulldog",
+    "Species": "Hund",
+    "ChipNumber": 1004,
+    "Characteristics": "Meget social og aktiv",
+    "Size": "Lille",
+    "BirthYear": 2019,
+    "MedicalHistory": "Har haft allergi",
+    "VisitorLog": "Bes\u00F8gt 4 gange"
+  },
+  {
+    "Name": "Freja",
+    "Race": "Huskat",
+    "Species": "Kat",
+    "ChipNumber": 1005,
+    "Characteristics": "Sky men nysgerrig",
+    "Size": "Mellem",
+    "BirthYear": 2021,
+    "MedicalHistory": "Chippet, steriliseret",
+    "VisitorLog": "Bes\u00F8gt 2 gange"
+  },
+  {
+    "Name": "Simba",
+    "Race": "Golden Retriever",
+    "Species": "Hund",
+    "ChipNumber": 1006,
+    "Characteristics": "Rolig og k\u00E6rlig",
+    "Size": "Stor",
+    "BirthYear": 2017,
+    "MedicalHistory": "Tidligere \u00F8rebet\u00E6ndelse",
+    "VisitorLog": "Bes\u00F8gt 5 gange"
+  },
+  {
+    "Name": "Nala",
+    "Race": "Sibirisk Kat",
+    "Species": "Kat",
+    "ChipNumber": 1007,
+    "Characteristics": "Aktiv, elsker leg",
+    "Size": "Mellem",
+    "BirthYear": 2019,
+    "MedicalHistory": "Vaccineret, pelspleje n\u00F8dvendig",
+    "VisitorLog": "Bes\u00F8gt 3 gange"
+  },
+  {
+    "Name": "Alba",
+    "Race": "Hollandsk Dv\u00E6rg",
+    "Species": "Kanin",
+    "ChipNumber": 1008,
+    "Characteristics": "Sky, men godmodig",
+    "Size": "Lille",
+    "BirthYear": 2023,
+    "MedicalHistory": "Ingen sygdomme",
+    "VisitorLog": "Bes\u00F8gt 1 gang"
+  },
+  {
+    "Name": "Felix",
+    "Race": "Cocker Spaniel",
+    "Species": "Hund",
+    "ChipNumber": 1009,
+    "Characteristics": "Venlig og nysgerrig",
+    "Size": "Mellem",
+    "BirthYear": 2020,
+    "MedicalHistory": "\u00D8jenproblemer tidligere",
+    "VisitorLog": "Bes\u00F8gt 2 gange"
+  },
+  {
+    "Name": "Zelda",
+    "Race": "Ragdoll",
+    "Species": "Kat",
+    "ChipNumber": 1010,
+    "Characteristics": "Meget k\u00E6len og stille",
+    "Size": "Mellem",
+    "BirthYear": 2018,
+    "MedicalHistory": "Steriliseret, allergivenlig",
+    "VisitorLog": "Bes\u00F8gt 6 gange"
+  },
+  {
+    "Name": "Cheems",
+    "Race": "Shiba Inu",
+    "Species": "Hund",
+    "ChipNumber": 2001,
+    "Characteristics": "Lidt nerv\u00F8s men s\u00F8d",
+    "Size": "Lille",
+    "BirthYear": 2020,
+    "MedicalHistory": "Vaccineret, lidt tandsten",
+    "VisitorLog": "Bes\u00F8gt 2 gange"
+  },
+  {
+    "Name": "BigFloppa",
+    "Race": "Karakal Mix",
+    "Species": "Kat",
+    "ChipNumber": 2002,
+    "Characteristics": "Afslappet attitude",
+    "Size": "Stor",
+    "BirthYear": 2019,
+    "MedicalHistory": "Steriliseret, pelspleje n\u00F8dvendig",
+    "VisitorLog": "Bes\u00F8gt 3 gange"
+  },
+  {
+    "Name": "Doge",
+    "Race": "Shiba Inu",
+    "Species": "Hund",
+    "ChipNumber": 2003,
+    "Characteristics": "Wow. Such energi.",
+    "Size": "Lille",
+    "BirthYear": 2018,
+    "MedicalHistory": "Vaccineret, tidligere l\u00F8se kn\u00E6",
+    "VisitorLog": "Bes\u00F8gt 4 gange"
+  },
+  {
+    "Name": "Bingus",
+    "Race": "Sphynx",
+    "Species": "Kat",
+    "ChipNumber": 2004,
+    "Characteristics": "K\u00E6len og nysgerrig",
+    "Size": "Lille",
+    "BirthYear": 2021,
+    "MedicalHistory": "Ingen kendte sygdomme",
+    "VisitorLog": "Bes\u00F8gt 1 gang"
+  },
+  {
+    "Name": "Walter",
+    "Race": "Bull Terrier",
+    "Species": "Hund",
+    "ChipNumber": 2005,
+    "Characteristics": "Seri\u00F8st blik, blid sj\u00E6l",
+    "Size": "Mellem",
+    "BirthYear": 2017,
+    "MedicalHistory": "Tidligere hudproblemer",
+    "VisitorLog": "Bes\u00F8gt 5 gange"
+  },
+  {
+    "Name": "Skibidi",
+    "Race": "Huskat",
+    "Species": "Kat",
+    "ChipNumber": 2006,
+    "Characteristics": "Meget energisk",
+    "Size": "Mellem",
+    "BirthYear": 2022,
+    "MedicalHistory": "Chippet, steriliseret",
+    "VisitorLog": "Bes\u00F8gt 1 gang"
+  },
+  {
+    "Name": "Grumpy",
+    "Race": "Perser",
+    "Species": "Kat",
+    "ChipNumber": 2007,
+    "Characteristics": "Ser sur ud, men s\u00F8d",
+    "Size": "Lille",
+    "BirthYear": 2016,
+    "MedicalHistory": "T\u00E5refl\u00E5d, kr\u00E6ver daglig pleje",
+    "VisitorLog": "Bes\u00F8gt 6 gange"
+  },
+  {
+    "Name": "Gigachad",
+    "Race": "Sch\u00E6ferhund",
+    "Species": "Hund",
+    "ChipNumber": 2008,
+    "Characteristics": "Stolt og st\u00E6rk",
+    "Size": "Stor",
+    "BirthYear": 2018,
+    "MedicalHistory": "Vaccineret og i god form",
+    "VisitorLog": "Bes\u00F8gt 2 gange"
+  },
+  {
+    "Name": "LilBork",
+    "Race": "Corgi",
+    "Species": "Hund",
+    "ChipNumber": 2009,
+    "Characteristics": "Sm\u00E5 ben, stor attitude",
+    "Size": "Lille",
+    "BirthYear": 2021,
+    "MedicalHistory": "Lidt overv\u00E6gtig",
+    "VisitorLog": "Bes\u00F8gt 3 gange"
+  },
+  {
+    "Name": "Shrek",
+    "Race": "British Shorthair",
+    "Species": "Kat",
+    "ChipNumber": 2010,
+    "Characteristics": "Stor, gr\u00F8n personlighed",
+    "Size": "Mellem",
+    "BirthYear": 2019,
+    "MedicalHistory": "Steriliseret, god helbred",
+    "VisitorLog": "Bes\u00F8gt 4 gange"
+  }
+]
