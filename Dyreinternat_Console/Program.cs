@@ -38,6 +38,7 @@ namespace Dyreinternat_Console
                         Console.WriteLine("Indtast venligst et gyldigt tal!");
                         break;
                 }
+                testProgram();
             }
         }
     }
