@@ -11,7 +11,8 @@ namespace Dyreinternat_Console
         static void Main(string[] args)
         {
             AnimalService animalService = new AnimalService(new AnimalJsonRepo(@"..\..\..\JSON\")); // Service for animal with corrected path
-            AnimalTest aT = new AnimalTest(animalService);
+            AnimalTest animalTest = new AnimalTest(animalService);
+
 
             testProgram();
 
@@ -29,10 +30,19 @@ namespace Dyreinternat_Console
                 switch (choice)
                 {
                     case 1:
-                        aT.animalTest();
+                        animalTest.animalTest();
                         break;
                     case 2:
-                        Console.WriteLine("Hvad ville du teste med Booking?");
+                        Console.WriteLine("Ikke lavet endnu");
+                        break;
+                    case 3:
+                        Console.WriteLine("Ikke lavet endnu");
+                        break;
+                    case 4:
+                        Console.WriteLine("Ikke lavet endnu");
+                        break;
+                    case 5:
+                        Console.WriteLine("Ikke lavet endnu");
                         break;
                     default:
                         Console.WriteLine("Indtast venligst et gyldigt tal!");
