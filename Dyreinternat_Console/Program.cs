@@ -21,7 +21,7 @@ namespace Dyreinternat_Console
                 Console.WriteLine("Roskilde dyreinternat test program. Hvad ville du teste?");
                 Console.WriteLine("1. Dyr");
                 Console.WriteLine("2. Booking");
-                Console.WriteLine("3. Aktiviteter");
+                Console.WriteLine("3. ActivityTest");
                 Console.WriteLine("4. Blogs");
                 Console.WriteLine("5. Ansatte");
                 Console.Write("Indsæt dit valg: ");
