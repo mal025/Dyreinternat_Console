@@ -18,7 +18,7 @@ namespace Dyreinternat_Console
             AnimalService = animalService;
         }
 
-        public void animalTest() // Test for all animals
+        public void AnimalTests() // Test for all animals
         {
             Console.WriteLine("Test af dyr");
             Console.WriteLine("Hvilken rolle har du?");
@@ -38,10 +38,10 @@ namespace Dyreinternat_Console
                     switch (choice)
                     {
                         case 1:
-                            printAllAnimals();
+                            PrintAllAnimals();
                             break;
                         case 2:
-                            searchAnimal();
+                            SearchAnimal();
                             break;
                         default:
                             Console.WriteLine("Indtast venligst et gyldigt tal");
@@ -58,13 +58,13 @@ namespace Dyreinternat_Console
                     switch (choice)
                     {
                         case 1:
-                            printAllAnimals();
+                            PrintAllAnimals();
                             break;
                         case 2:
-                            searchAnimal();
+                            SearchAnimal();
                             break;
                         case 3:
-                            createAnimal();
+                            CreateAnimal();
                             break;
                         default:
                             Console.WriteLine("Indtast venligst et gyldigt tal");
@@ -77,7 +77,7 @@ namespace Dyreinternat_Console
             }
         }
 
-        public void searchAnimal() // Methode to search an animal from the chipnumber 
+        public void SearchAnimal() // Methode to search an animal from the chipnumber 
         {
             Console.WriteLine("For at søge efter et dyr skal du bruge chipnummeret");
             Console.Write("Indsæt venligst dyrets chipnummer: ");
@@ -85,7 +85,7 @@ namespace Dyreinternat_Console
             Animal animal = AnimalService.GetByID(chipNum);
             if (animal != null)  // Checks if there is an animal
             {
-                printAnimal(animal);
+                PrintAnimal(animal);
             }
             else
             {
@@ -94,7 +94,7 @@ namespace Dyreinternat_Console
 
         }
 
-        public void createAnimal() // Methode to insert all information on an animal and create it
+        public void CreateAnimal() // Methode to insert all information on an animal and create it
         {
             Console.WriteLine("Du skal indtaste nogle informationer om dyret du ville oprette");
             Console.Write("Indtast navn: ");
@@ -120,21 +120,21 @@ namespace Dyreinternat_Console
             AnimalService.Add(animal);
 
             Console.WriteLine("Opretede følgende dyr i systemet: ");
-            printAnimal(animal);
+            PrintAnimal(animal);
         }
 
-        public void printAllAnimals()  // Methode to print all animals
+        public void PrintAllAnimals()  // Methode to print all animals
         {
             List<Animal> animals = AnimalService.GetAll();
             int i = 1;
             foreach (Animal animal in animals)
             {
                 Console.WriteLine($"\nDyr {i}");
-                printAnimal(animal);
+                PrintAnimal(animal);
                 i++;
             }
         }
-        public void printAnimal(Animal animal) // The methode that prints all the properties of the animal
+        public void PrintAnimal(Animal animal) // The methode that prints all the properties of the animal
         {
                 Console.WriteLine($"Navn: {animal.Name}");
                 Console.WriteLine($"Race: {animal.Race}");

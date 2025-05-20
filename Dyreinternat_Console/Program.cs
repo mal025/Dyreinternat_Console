@@ -14,6 +14,11 @@ namespace Dyreinternat_Console
             AnimalTest animalTest = new AnimalTest(animalService);
             BookingService bookingSerice = new BookingService(new BookingJsonRepo(@"..\..\..\JSON\"));
             BookingTest bookingTest = new BookingTest(bookingSerice);
+            BlogService blogService = new BlogService(new BlogJsonRepo(@"..\..\..\JSON\")); // Service for blog with corrected path
+            BlogTest blogTest = new BlogTest(blogService);
+
+
+           
 
             testProgram();
 
@@ -33,7 +38,7 @@ namespace Dyreinternat_Console
                 switch (choice)
                 {
                     case 1:
-                        animalTest.animalTest();
+                        animalTest.AnimalTests();
                         break;
                     case 2:
                         bookingTest.TestBooking();
@@ -42,7 +47,7 @@ namespace Dyreinternat_Console
                         Console.WriteLine("Ikke lavet endnu");
                         break;
                     case 4:
-                        Console.WriteLine("Ikke lavet endnu");
+                        blogTest.BlogTests();
                         break;
                     case 5:
                         Console.WriteLine("Ikke lavet endnu");
@@ -58,6 +63,7 @@ namespace Dyreinternat_Console
                         break;
                 }
                 testProgram();
+                
             }
         }
     }
