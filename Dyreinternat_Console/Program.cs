@@ -21,9 +21,11 @@ namespace Dyreinternat_Console
                 Console.WriteLine("Roskilde dyreinternat test program. Hvad ville du teste?");
                 Console.WriteLine("1. Dyr");
                 Console.WriteLine("2. Booking");
-                Console.WriteLine("3. Aktiviteter");
-                Console.WriteLine("4. Blogs");
-                Console.WriteLine("5. Ansatte");
+                Console.WriteLine("3. ActivityTest");
+                Console.WriteLine("4. BlogTest");
+                Console.WriteLine("5. EmployeeTest");
+                Console.WriteLine("6. DoctorVisitTest");
+                Console.WriteLine("7. CustomerTest");
                 Console.Write("Indsæt dit valg: ");
                 int choice = int.Parse(Console.ReadLine());
 
@@ -42,6 +44,12 @@ namespace Dyreinternat_Console
                         Console.WriteLine("Ikke lavet endnu");
                         break;
                     case 5:
+                        Console.WriteLine("Ikke lavet endnu");
+                        break;
+                    case 6:
+                        Console.WriteLine("Ikke lavet endnu");
+                        break;
+                    case 7:
                         Console.WriteLine("Ikke lavet endnu");
                         break;
                     default:
