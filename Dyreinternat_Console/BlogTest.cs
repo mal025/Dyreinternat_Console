@@ -38,19 +38,19 @@ namespace Dyreinternat_Console
                     switch (choice)
                     {
                         case 1:
-                            PrintAllBlogs();
+                            //PrintAllBlogs();
                             break;
                         case 2:
-                            SearchBlog();
+                            //SearchBlog();
                             break;
                         case 3:
-                            createBlog();
+                            //createBlog();
                             break;
                         case 4:
-                            DeleteBlog();
+                            //DeleteBlog();
                             break;
                         case 5:
-                            EditBlog();
+                            //EditBlog();
                             break;
                         default:
                             Console.WriteLine("Indtast venligst et gyldigt tal");

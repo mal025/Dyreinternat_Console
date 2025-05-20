@@ -12,7 +12,8 @@ namespace Dyreinternat_Console
         {
             AnimalService animalService = new AnimalService(new AnimalJsonRepo(@"..\..\..\JSON\")); // Service for animal with corrected path
             AnimalTest animalTest = new AnimalTest(animalService);
-
+            BookingService bookingSerice = new BookingService(new BookingJsonRepo(@"..\..\..\JSON\"));
+            BookingTest bookingTest = new BookingTest(bookingSerice);
 
             testProgram();
 
@@ -35,7 +36,7 @@ namespace Dyreinternat_Console
                         animalTest.animalTest();
                         break;
                     case 2:
-                        Console.WriteLine("Ikke lavet endnu");
+                        bookingTest.TestBooking();
                         break;
                     case 3:
                         Console.WriteLine("Ikke lavet endnu");

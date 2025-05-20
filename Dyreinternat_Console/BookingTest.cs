@@ -36,6 +36,7 @@ namespace Dyreinternat_Console
                     SearchBooking();
                     break;
                 case 3:
+                    CreateBooking();
                     break;
                 default:
                     break;
