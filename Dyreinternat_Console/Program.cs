@@ -28,6 +28,9 @@ namespace Dyreinternat_Console
             DoctorVisitService doctorVisitService = new DoctorVisitService(new DoctorVisitJsonRepo(@"..\..\..\JSON\"));
             DoctorVisitTest doctorVisitTest = new DoctorVisitTest(doctorVisitService);
 
+            EmployeeService employeeService = new EmployeeService(new EmployeeJsonRepo(@"..\..\..\JSON\"));
+            EmployeeTest employeeTest = new EmployeeTest(employeeService);
+
 
 
 
@@ -62,7 +65,7 @@ namespace Dyreinternat_Console
                         blogTest.BlogTests();
                         break;
                     case 5:
-                        Console.WriteLine("Ikke lavet endnu");
+                        employeeTest.TestEmployee();
                         break;
                     case 6:
                         doctorVisitTest.TestDoctorVisit();
