@@ -15,11 +15,19 @@ namespace Dyreinternat_Console
 
             BookingService bookingSerice = new BookingService(new BookingJsonRepo(@"..\..\..\JSON\"));
             BookingTest bookingTest = new BookingTest(bookingSerice);
+
             ActivityService activityService = new ActivityService(new ActivityJsonRepo(@"..\..\..\JSON\"));
             ActivityTest activityTest = new ActivityTest(activityService);
 
+            BlogService blogService = new BlogService(new BlogJsonRepo(@"..\..\..\JSON\"));
+            BlogTest blogTest = new BlogTest(blogService);
 
-           
+            CustomerService customerService = new CustomerService(new CustomerJsonRepo(@"..\..\..\JSON\"));
+            CustomerTest customerTest = new CustomerTest(customerService);
+
+
+
+
 
             testProgram();
 
@@ -57,7 +65,7 @@ namespace Dyreinternat_Console
                         Console.WriteLine("Ikke lavet endnu");
                         break;
                     case 7:
-                        Console.WriteLine("Ikke lavet endnu");
+                        customerTest.CustomerTests();
                         break;
                     default:
                         Console.WriteLine("Indtast venligst et gyldigt tal!");
