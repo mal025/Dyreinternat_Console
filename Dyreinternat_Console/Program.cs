@@ -14,6 +14,8 @@ namespace Dyreinternat_Console
             AnimalTest animalTest = new AnimalTest(animalService);
             BookingService bookingSerice = new BookingService(new BookingJsonRepo(@"..\..\..\JSON\"));
             BookingTest bookingTest = new BookingTest(bookingSerice);
+            ActivityService activityService = new ActivityService(new ActivityJsonRepo(@"..\..\..\JSON\"));
+            ActivityTest activityTest = new ActivityTest(activityService);
 
             testProgram();
 
@@ -39,7 +41,7 @@ namespace Dyreinternat_Console
                         bookingTest.TestBooking();
                         break;
                     case 3:
-                        Console.WriteLine("Ikke lavet endnu");
+                        activityTest.ActivityTests();
                         break;
                     case 4:
                         Console.WriteLine("Ikke lavet endnu");
