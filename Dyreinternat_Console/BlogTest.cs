@@ -154,7 +154,7 @@ namespace Dyreinternat_Console
             if (!string.IsNullOrWhiteSpace(newImage))
                 blog.Image = newImage;
 
-            BlogService.Update(blog); // Du skal have en Update-metode i BlogService
+            BlogService.Update(blog); 
             Console.WriteLine("\nBloggen er blevet opdateret:");
             PrintBlog(blog);
         }
