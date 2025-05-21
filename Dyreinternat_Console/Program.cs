@@ -12,14 +12,15 @@ namespace Dyreinternat_Console
         {
             AnimalService animalService = new AnimalService(new AnimalJsonRepo(@"..\..\..\JSON\")); // Service for animal with corrected path
             AnimalTest animalTest = new AnimalTest(animalService);
+
             BookingService bookingSerice = new BookingService(new BookingJsonRepo(@"..\..\..\JSON\"));
             BookingTest bookingTest = new BookingTest(bookingSerice);
+            
             ActivityService activityService = new ActivityService(new ActivityJsonRepo(@"..\..\..\JSON\"));
             ActivityTest activityTest = new ActivityTest(activityService);
 
-
-           
-
+            BlogService blogService = new BlogService(new BlogJsonRepo(@"..\..\..\JSON\")); // Service for blog with corrected path
+            BlogTest blogTest = new BlogTest(blogService);
             testProgram();
 
             void testProgram() // Runs the test program
