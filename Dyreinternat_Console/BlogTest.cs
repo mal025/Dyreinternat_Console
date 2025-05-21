@@ -21,42 +21,28 @@ namespace Dyreinternat_Console
 
         public void BlogTests() // Test for all blogs
         {
-            Console.WriteLine("Muligheder til blog");
-            Console.WriteLine("1. Blog");
+            // The functions  available for the customer
+            Console.WriteLine("1. Se alle blogs");
+            Console.WriteLine("2. Lav et nyt blog indlæg");
+            Console.WriteLine("3. Redigere en blog");                  
             Console.Write("Indsæt dit valg: ");
             int choice = int.Parse(Console.ReadLine());
-
-
             switch (choice)
             {
-                case 1: // The functions  available for the customer
-                    Console.WriteLine("1. Se alle blogs");
-                    Console.WriteLine("2. Lav et nyt blog indlæg");
-                    Console.WriteLine("3. Redigere en blog");                  
-                    Console.Write("Indsæt dit valg: ");
-                    choice = int.Parse(Console.ReadLine());
-                    switch (choice)
-                    {
-                        case 1:
-                            PrintAllBlogs();
-                            break;                  
-                        case 2:
-                            CreateBlog();
-                            break;
-                        case 3:
-                            EditBlog();
-                            break;
-                        default:
-                            Console.WriteLine("Indtast venligst et gyldigt tal");
-                            break;
-                    }
+                case 1:
+                    PrintAllBlogs();
+                    break;                  
+                case 2:
+                    CreateBlog();
+                    break;
+                case 3:
+                    EditBlog();
                     break;
                 default:
-                    Console.WriteLine("Indtast venligst et gyldigt tal!");
+                    Console.WriteLine("Indtast venligst et gyldigt tal");
                     break;
             }
         }
-
         public void PrintAllBlogs()  // Methode to print all blogs
         {
             List<Blog> blogs = BlogService.GetAll();

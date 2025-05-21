@@ -1,10 +1,10 @@
 [
   {
-    "Title": "Test",
-    "Description": "Dette er en test",
+    "Title": "nytittel",
+    "Description": "ny tittel",
     "DateTime": "2025-05-20T13:22:00",
-    "Image": "n\u00E6",
-    "Author": "Christian",
+    "Image": "nej",
+    "Author": "Mathias",
     "BlogID": 1
   }
 ]
