@@ -16,9 +16,11 @@ namespace Dyreinternat_Console
             BookingTest bookingTest = new BookingTest(bookingSerice);
             ActivityService activityService = new ActivityService(new ActivityJsonRepo(@"..\..\..\JSON\"));
             ActivityTest activityTest = new ActivityTest(activityService);
+            BlogService blogService = new BlogService(new BlogJsonRepo(@"..\..\..\JSON\"));
+            BlogTest blogTest = new BlogTest(blogService);
 
 
-           
+
 
             testProgram();
 
