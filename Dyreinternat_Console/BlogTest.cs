@@ -85,7 +85,7 @@ namespace Dyreinternat_Console
 
             BlogService.Add(blog);
 
-            Console.WriteLine("Opretede følgende blog i systemet: ");
+            Console.WriteLine("Oprettede følgende blog i systemet: ");
             PrintBlog(blog);
         }
         public void EditBlog()
