@@ -25,6 +25,9 @@ namespace Dyreinternat_Console
             CustomerService customerService = new CustomerService(new CustomerJsonRepo(@"..\..\..\JSON\"));
             CustomerTest customerTest = new CustomerTest(customerService);
 
+            DoctorVisitService doctorVisitService = new DoctorVisitService(new DoctorVisitJsonRepo(@"..\..\..\JSON\"));
+            DoctorVisitTest doctorVisitTest = new DoctorVisitTest(doctorVisitService);
+
 
 
 
@@ -62,7 +65,7 @@ namespace Dyreinternat_Console
                         Console.WriteLine("Ikke lavet endnu");
                         break;
                     case 6:
-                        Console.WriteLine("Ikke lavet endnu");
+                        doctorVisitTest.TestDoctorVisit();
                         break;
                     case 7:
                         customerTest.CustomerTests();
