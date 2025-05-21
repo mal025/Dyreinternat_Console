@@ -17,6 +17,9 @@ namespace Dyreinternat_Console
             ActivityService activityService = new ActivityService(new ActivityJsonRepo(@"..\..\..\JSON\"));
             ActivityTest activityTest = new ActivityTest(activityService);
 
+
+           
+
             testProgram();
 
             void testProgram() // Runs the test program
@@ -35,7 +38,7 @@ namespace Dyreinternat_Console
                 switch (choice)
                 {
                     case 1:
-                        animalTest.animalTest();
+                        animalTest.AnimalTests();
                         break;
                     case 2:
                         bookingTest.TestBooking();
@@ -44,7 +47,7 @@ namespace Dyreinternat_Console
                         activityTest.ActivityTests();
                         break;
                     case 4:
-                        Console.WriteLine("Ikke lavet endnu");
+                        blogTest.BlogTests();
                         break;
                     case 5:
                         Console.WriteLine("Ikke lavet endnu");
@@ -60,6 +63,7 @@ namespace Dyreinternat_Console
                         break;
                 }
                 testProgram();
+                
             }
         }
     }
