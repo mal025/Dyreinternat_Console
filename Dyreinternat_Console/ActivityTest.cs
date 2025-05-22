@@ -76,7 +76,7 @@ namespace Dyreinternat_Console
             Console.WriteLine($"Titel: {activity.Title}");
             Console.WriteLine($"Beskrivelse: {activity.Description}");
             Console.WriteLine($"Tid: {activity.DateTime}");
-            Console.WriteLine($"Antal deltagere: {activity.NumberOfPerticipants}");
+            Console.WriteLine($"Antal deltagere: {activity.NumberOfParticipants}");
             Console.WriteLine($"Forfatter: {activity.Author}");
             Console.WriteLine($"Aktivitets-ID: {activity.ActivityID}");
         }
