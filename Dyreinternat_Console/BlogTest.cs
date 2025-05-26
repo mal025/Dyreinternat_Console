@@ -93,7 +93,7 @@ namespace Dyreinternat_Console
             List<Blog> blogs = BlogService.GetAll();
 
             Console.WriteLine("Eksisterende blogs:");
-            foreach (var b in blogs)
+            foreach (Blog b in blogs)
             {
                 Console.WriteLine($"ID: {b.BlogID} | Titel: {b.Title}");
             }
