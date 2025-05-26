@@ -73,15 +73,15 @@ namespace Dyreinternat_Console
             string title = Console.ReadLine();
             Console.Write("Indtast beskrivelse: ");
             string description = Console.ReadLine();
-            Console.Write("Indtast tid: ");
-            DateTime dateTime = DateTime.Parse(Console.ReadLine());
+            Console.Write("Dato og tid (yyyy-mm-dd hh:mm): ");
+            DateTime datetime = DateTime.Parse(Console.ReadLine());
             Console.Write("Indtast forfatter: ");         
             string author = Console.ReadLine();
             Console.Write("Indtast blogID: ");
             int blogID = int.Parse(Console.ReadLine());
             Console.Write("Indsæt billede: ");
             string image = Console.ReadLine();
-            Blog blog = new Blog(title, description, dateTime, image, author, blogID);
+            Blog blog = new Blog(title, description, datetime, image, author, blogID);
 
             BlogService.Add(blog);
 
