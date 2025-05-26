@@ -11,9 +11,9 @@ namespace Dyreinternat_Console
 {
     public class BlogTest
     {
-
+        // This class is used to test the BlogService functionality
         public BlogService BlogService;
-
+        // It contains methods to interact with the user and perform operations on blogs
         public BlogTest(BlogService blogService)
         {
             BlogService = blogService;
@@ -29,6 +29,7 @@ namespace Dyreinternat_Console
             int choice = int.Parse(Console.ReadLine());
             switch (choice)
             {
+                // The switch statement determines the available options based on the user's choice
                 case 1:
                     PrintAllBlogs();
                     break;                  
@@ -55,6 +56,7 @@ namespace Dyreinternat_Console
             }
         }
 
+        // This method prints the properties of a single blog
         public void PrintBlog(Blog blog) // The methode that prints all the properties of the blogs
         {
             Console.WriteLine($"Titel: {blog.Title}");
@@ -65,7 +67,7 @@ namespace Dyreinternat_Console
           
            
         }
-
+        // This method creates a new blog by prompting the user for input and adding it to the BlogService
         public void CreateBlog() // Methode to insert all information to a blog and create it
         {
             Console.WriteLine("Du skal indtaste nogle informationer om bloggen du ville oprette");
@@ -88,23 +90,24 @@ namespace Dyreinternat_Console
             Console.WriteLine("Oprettede følgende blog i systemet: ");
             PrintBlog(blog);
         }
+        // This method allows the user to edit an existing blog by selecting it from a list and updating its properties
         public void EditBlog()
         {
             List<Blog> blogs = BlogService.GetAll();
-
+            // Display existing blogs to the user
             Console.WriteLine("Eksisterende blogs:");
             foreach (Blog b in blogs)
             {
                 Console.WriteLine($"ID: {b.BlogID} | Titel: {b.Title}");
             }
-
+            // Prompt the user to enter the ID of the blog they want to edit
             Console.Write("\nIndtast ID på bloggen du ønsker at redigere: ");
             if (!int.TryParse(Console.ReadLine(), out int id))
             {
                 Console.WriteLine("Ugyldigt ID format.");
                 return;
             }
-
+            // Find the blog with the specified ID
             Blog blog = blogs.FirstOrDefault(b => b.BlogID == id);
 
             if (blog == null)
@@ -112,9 +115,9 @@ namespace Dyreinternat_Console
                 Console.WriteLine("Ingen blog fundet med det ID.");
                 return;
             }
-
+            // Display the current details of the blog to the user
             Console.WriteLine("\nNu redigeres bloggen. Tryk Enter hvis du ikke ønsker at ændre et felt.");
-
+            // Prompt the user for new values for each property of the blog
             Console.Write($"Ny titel ({blog.Title}): ");
             string newTitle = Console.ReadLine();
             if (!string.IsNullOrWhiteSpace(newTitle))
@@ -139,7 +142,7 @@ namespace Dyreinternat_Console
             string newImage = Console.ReadLine();
             if (!string.IsNullOrWhiteSpace(newImage))
                 blog.Image = newImage;
-
+            // Update the blog in the BlogService with the new values
             BlogService.Update(blog); 
             Console.WriteLine("\nBloggen er blevet opdateret:");
             PrintBlog(blog);

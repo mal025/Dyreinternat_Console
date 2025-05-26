@@ -10,14 +10,14 @@ namespace Dyreinternat_Console
 {
     public class AnimalTest
     {
-
+        // This class is used to test the AnimalService functionality
         public AnimalService AnimalService;
-
+        // It contains methods to interact with the user and perform operations on animals
         public AnimalTest(AnimalService animalService)
         {
             AnimalService = animalService;
         }
-
+        // This method serves as the entry point for testing animal-related functionalities
         public void AnimalTests() // Test for all animals
         {
             Console.WriteLine("Test af dyr");
@@ -26,7 +26,7 @@ namespace Dyreinternat_Console
             Console.WriteLine("2. Medarbejder");
             Console.Write("Indsæt dit valg: ");
             int choice = int.Parse(Console.ReadLine());
-
+            // This switch statement determines the available options based on the user's role
             switch (choice)
             {
                 case 1: // The functions  available for the customer
