@@ -1,5 +1,8 @@
 [
   {
+    "RegisteredCustomerIDs": [
+      1
+    ],
     "Title": "Luft Hunde",
     "Description": "Tager alle hunde ud og lege ",
     "DateTime": "2001-09-11T14:46:00",

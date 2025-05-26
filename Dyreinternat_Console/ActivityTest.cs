@@ -35,6 +35,7 @@ namespace Dyreinternat_Console
                     Console.WriteLine("2. Søg efter aktivitet via ID");
                     Console.WriteLine("3. Opret ny aktivitet");
                     Console.WriteLine("4. Rediger en aktivitet");
+                    Console.WriteLine("5. Tilmeld dig en aktivitet");
                     Console.Write("Indsæt dit valg: ");
                     choice = int.Parse(Console.ReadLine());
 
@@ -51,6 +52,9 @@ namespace Dyreinternat_Console
                             break;
                         case 4:
                             EditActivity();
+                            break;
+                        case 5:
+                            RegisterCustomerToActivity();
                             break;
                         default:
                             Console.WriteLine("Indtast venligst et gyldigt tal");
@@ -189,6 +193,28 @@ namespace Dyreinternat_Console
             _activityService.UpdateActivity(activity);
             Console.WriteLine("\nAktiviteten er blevet opdateret:");
             PrintActivity(activity);
+        }
+        public void RegisterCustomerToActivity()
+        {
+            Console.Write("Indtast KundeID: ");
+            if (!int.TryParse(Console.ReadLine(), out int customerId))
+            {
+                Console.WriteLine("Ugyldigt kunde-ID.");
+                return;
+            }
+
+            Console.Write("Indtast Aktivitetens ID: ");
+            if (!int.TryParse(Console.ReadLine(), out int activityId))
+            {
+                Console.WriteLine("Ugyldigt aktivitet-ID.");
+                return;
+            }
+
+            bool success = _activityService.RegisterCustomerToActivity(activityId, customerId);
+            if (success)
+                Console.WriteLine("Du er nu tilmeldt aktiviteten.");
+            else
+                Console.WriteLine("Tilmelding mislykkedes.");
         }
     }
 }
