@@ -176,32 +176,32 @@ namespace Dyreinternat_Console
             // Prompt the user for new values for each property of the activity
             Console.Write($"Ny titel ({activity.Title}): ");
             string newTitle = Console.ReadLine();
-            if (!string.IsNullOrWhiteSpace(newTitle))
+            if (!string.IsNullOrWhiteSpace(newTitle)) // Try to parse the new title input
                 activity.Title = newTitle;
 
-            Console.Write($"Ny beskrivelse ({activity.Description}): ");
+            Console.Write($"Ny beskrivelse ({activity.Description}): "); // Try to parse the new description input
             string newDescription = Console.ReadLine();
-            if (!string.IsNullOrWhiteSpace(newDescription))
+            if (!string.IsNullOrWhiteSpace(newDescription)) // Try to parse the new description input
                 activity.Description = newDescription;
 
             Console.Write($"Ny forfatter ({activity.Author}): ");
             string newAuthor = Console.ReadLine();
-            if (!string.IsNullOrWhiteSpace(newAuthor))
+            if (!string.IsNullOrWhiteSpace(newAuthor)) // Try to parse the new author input
                 activity.Author = newAuthor;
 
             Console.Write($"Ny dato (nu: {activity.DateTime:yyyy-MM-dd HH:mm}): ");
             string newDate = Console.ReadLine();
-            if (DateTime.TryParse(newDate, out DateTime parsedDate))
+            if (DateTime.TryParse(newDate, out DateTime parsedDate)) // Try to parse the new date input
                 activity.DateTime = parsedDate;
 
             Console.Write($"Nyt antal af deltager ({activity.NumberOfPerticipants}): ");
             string NumberOfPerticipants = Console.ReadLine();
             if (!string.IsNullOrWhiteSpace(NumberOfPerticipants))
-                activity.Author = NumberOfPerticipants;
+                activity.Author = NumberOfPerticipants; // Try to parse the new number of participants input
 
             Console.Write($"Nyt aktivitets ID ({activity.ActivityID}): ");
             string newActivityID = Console.ReadLine();
-            if (!string.IsNullOrWhiteSpace(newActivityID))
+            if (!string.IsNullOrWhiteSpace(newActivityID)) // Try to parse the new activity ID input
                 activity.Author = newActivityID;
 
 
@@ -215,7 +215,7 @@ namespace Dyreinternat_Console
         {
             // Prompt the user for customer ID and activity ID to register for the activity
             Console.Write("Indtast KundeID: ");
-            if (!int.TryParse(Console.ReadLine(), out int customerId))
+            if (!int.TryParse(Console.ReadLine(), out int customerId)) // Try to parse the customer ID input
             {
                 Console.WriteLine("Ugyldigt kunde-ID.");
                 return;
@@ -228,11 +228,11 @@ namespace Dyreinternat_Console
                 return;
             }
             // Attempt to register the customer for the activity using the service
-            bool success = _activityService.RegisterCustomerToActivity(activityId, customerId);
+            bool success = _activityService.RegisterCustomerToActivity(activityId, customerId); // Try to register the customer for the activity
             if (success)
-                Console.WriteLine("Du er nu tilmeldt aktiviteten.");
+                Console.WriteLine("Du er nu tilmeldt aktiviteten."); // Inform the user if the registration was successful
             else
-                Console.WriteLine("Tilmelding mislykkedes.");
+                Console.WriteLine("Tilmelding mislykkedes."); // Inform the user if the registration failed
         }
     }
 }

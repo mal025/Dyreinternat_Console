@@ -11,25 +11,25 @@ namespace Dyreinternat_Console
         static void Main(string[] args)
         {
             AnimalService animalService = new AnimalService(new AnimalJsonRepo(@"..\..\..\JSON\")); // Service for animal with corrected path
-            AnimalTest animalTest = new AnimalTest(animalService);
+            AnimalTest animalTest = new AnimalTest(animalService); // Test for animal with corrected path
 
             BookingService bookingSerice = new BookingService(new BookingJsonRepo(@"..\..\..\JSON\")); // Service for booking with corrected path
-            BookingTest bookingTest = new BookingTest(bookingSerice);
+            BookingTest bookingTest = new BookingTest(bookingSerice); // Test for booking with corrected path
 
             ActivityService activityService = new ActivityService(new ActivityJsonRepo(@"..\..\..\JSON\")); // Service for activity with corrected path
-            ActivityTest activityTest = new ActivityTest(activityService);
+            ActivityTest activityTest = new ActivityTest(activityService); // Test for activity with corrected path
 
             BlogService blogService = new BlogService(new BlogJsonRepo(@"..\..\..\JSON\")); // Service for blog with corrected path
-            BlogTest blogTest = new BlogTest(blogService);
+            BlogTest blogTest = new BlogTest(blogService); // Test for blog with corrected path
 
             CustomerService customerService = new CustomerService(new CustomerJsonRepo(@"..\..\..\JSON\")); // Service for customer with corrected path
-            CustomerTest customerTest = new CustomerTest(customerService);
+            CustomerTest customerTest = new CustomerTest(customerService); // Test for customer with corrected path
 
             DoctorVisitService doctorVisitService = new DoctorVisitService(new DoctorVisitJsonRepo(@"..\..\..\JSON\")); // Service for doctor visit with corrected path
-            DoctorVisitTest doctorVisitTest = new DoctorVisitTest(doctorVisitService);
+            DoctorVisitTest doctorVisitTest = new DoctorVisitTest(doctorVisitService); // Test for doctor visit with corrected path
 
             EmployeeService employeeService = new EmployeeService(new EmployeeJsonRepo(@"..\..\..\JSON\")); // Service for employee with corrected path
-            EmployeeTest employeeTest = new EmployeeTest(employeeService);
+            EmployeeTest employeeTest = new EmployeeTest(employeeService); // Test for employee with corrected path
 
 
 
@@ -100,7 +100,7 @@ namespace Dyreinternat_Console
                     // Catch any exceptions that occur during the execution of the switch statement
                     catch (Exception ex)
                     {
-                        Console.WriteLine("En fejl opstod under kørsel: " + ex.Message);
+                        Console.WriteLine("En fejl opstod under kørsel: " + ex.Message); // Display the error message
                     }
                 }
             }
